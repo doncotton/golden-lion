@@ -1,1 +1,0 @@
-import{j as o}from"./jsx-runtime.DfAHgAh1.js";import"./index.BK7MP29M.js";function e({children:r}){return o.jsx("div",{className:"prodkt-rim-container grid border rounded-2xl overflow-hidden",children:r})}export{e as DashboardLayout};

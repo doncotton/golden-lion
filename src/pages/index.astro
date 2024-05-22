@@ -1,20 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { Aside } from '@/components/layout/dashboard/aside'
-import { Header } from '@/components/layout/dashboard/header'
-import { DashboardLayout } from '@/components/layout/dashboard/layout'
-import { Main } from '@/components/layout/dashboard/main'
-import Hero from '@/components/sections/hero/index.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-		<DashboardLayout client:only="react">
-			<div class="flex min-h-screen w-full max-w-[100dvw] flex-col">
-			<Aside client:only="react"></Aside>
-			<Header client:only="react"></Header>
-			<Main client:only="react">
-				<Hero />
-			</Main>
-			</div>
-		</DashboardLayout>
+<Layout title="Under Construction">
+Under Construction
 </Layout>
