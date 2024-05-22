@@ -1,0 +1,67 @@
+@tailwind base;
+@import "@radix-ui/themes/styles.css";
+@import "ghost.css";
+// Supports weights 100-900
+@import "../assets/fonts/dm-sans/index.css";
+// @import '@fontsource-variable/dm-sans';
+@import '@fontsource/iosevka/400.css';
+@import '@fontsource/iosevka/500.css';
+@import '@fontsource/iosevka/600.css';
+@import '@fontsource/iosevka/700.css';
+:root {
+  --radius: 8px;
+}
+* {
+  border-color: var(--ghost-a2);
+}
+body {
+    font-family: 'DM Sans Variable', sans-serif;
+    @apply overflow-x-hidden bg-[var(--gray-1)] overflow-y-scroll scroll-m-0 scroll-smooth scroll-p-0 bg-cover after:absolute after:w-full after:h-full after:top-0 after:left-0 after:z-[-1] after:right-0 after:bg-[url('../assets/background/landing-noise.webp')] bg-blend-luminosity bg-[url('../assets/background/prodkt-app-background.png')];
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+pre, code {
+    font-family: 'Iosevka', monospace !important;
+  }
+@tailwind components;
+.prodkt-header {
+  width: calc(100% - 90px);
+  @apply bg-[var(--gray-a1)] backdrop-blur-sm;
+  border-top-right-radius: calc(0.75rem + 2px);
+  left:73px;
+}
+.prodkt-aside {
+  width: 56px;
+  max-height: 100dvh;
+  @apply bg-[var(--gray-a1)] backdrop-blur-sm;
+  height: 100%;
+  left:100px;
+  position: absolute;
+}
+.prodkt-rim-container {
+  position: relative;
+  left: auto;
+  right: auto;
+  width: calc(100dvw - 32px);
+  margin: auto auto;
+  height: calc(100dvh - 32px);
+}
+
+.prodkt-main {
+  position: absolute;
+  @apply top-0 bottom-0 left-0 right-0;
+  width: calc(100% - 56px);
+  height: calc(100% - 90px);
+  -webkit-box-shadow: -7px -7px 23px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: -7px -7px 23px -4px rgba(0,0,0,0.75);
+box-shadow: -7px -7px 23px -4px rgba(0,0,0,0.75);
+  left:56px;
+  top: 56px;
+  @apply border-s border-t rounded-tl-2xl after:absolute after:w-full after:h-full after:left-0 after:right-0 after:top-0 after:bottom-0 after:bg-black/50;
+}
+.prodkt-head-logo {
+  
+  -webkit-mask-image: radial-gradient(141.42% 141.42% at 100% 100%, transparent 36%, var(--ghost-a6) 100%);
+  mask-image: radial-gradient(141.42% 141.42% at 100% 100%, transparent 36%, var(--ghost-a6) 100%);
+}
+@tailwind utilities;

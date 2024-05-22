@@ -1,0 +1,1 @@
+import{j as l}from"./jsx-runtime.DfAHgAh1.js";import"./index.BK7MP29M.js";function i({children:o}){return l.jsx("main",{className:"z-[1] prodkt-main p-0 relative overflow-x-hidden overflow-y-visible scroll-m-0 scroll-smooth scroll-p-0",children:l.jsx("div",{className:"w-full h-full relative",children:o})})}export{i as Main};
